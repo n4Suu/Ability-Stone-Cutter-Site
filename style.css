@@ -1,0 +1,106 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  }
+  .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item6, .grid-item7, .grid-item8, .grid-item9{
+    text-align: center;
+  }
+
+  .grid-item2 {
+    margin-top: 3%;
+    padding-bottom: 10%;
+  }
+
+  .grid-item5 {
+    background-color: #0b1319;
+    padding: 20px;
+    padding-top: 50px;
+    max-width: 110%;
+    min-width: 100%;
+    height: 110%;
+    font-size: 30px;
+    text-align: center;
+    border: 25px solid #B88846;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+  }
+
+
+#actionElement, #valueElement {
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    transform: scale(0.9);
+}
+
+.custom-file-upload {
+    transition: all .2s ease-in-out;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#good, #bad, #restart {
+    transition: all .2s ease-in-out;
+    align-items: center;
+    border: 1px outset black;
+    cursor:pointer;
+    border-radius: 10px;
+    height:35px;
+    width:35px;
+}
+
+#restart {
+    background-color: lightBlue;
+    height:40px;
+    width:40px;
+}
+
+#good {
+    background-color: rgba(20, 220, 0, 0.9);
+}
+
+#bad {
+    background-color: rgba(220, 0, 0, 0.9);
+    
+}
+
+#good:hover, #bad:hover, #restart:hover {
+    transform: scale(0.9);
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gold;
+}
